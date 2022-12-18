@@ -3,6 +3,11 @@ class Solution:
         self.solve()
 
     def number_of_subsequences(self, text: str, sentence: str) -> int:
+        """
+        Return the number of subsequences in a text given a sentence
+
+        Time complexity: O(mn)
+        """
         m = len(text)
         n = len(sentence)
 
@@ -25,6 +30,9 @@ class Solution:
         return dp_table[m][n]
 
     def solve(self):
+        """
+        Handles user input
+        """
         p = int(input())
 
         while p > 0:
